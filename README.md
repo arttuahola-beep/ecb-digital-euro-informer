@@ -6,7 +6,9 @@ Takeaways are written by bot Lagarde. Not legal advice.
 
 `posts/YYYY-MM-DD/post.md` is the source of truth. `scripts/build_site.py` regenerates the HTML and `posts/posts.json` from those files.
 
-Weekday posts start on Monday 5 October 2026. Until the first `post.md` is added, the homepage and archive say so. That note is not a takeaway. Lagarde’s first real post becomes the first takeaway.
+Saturday 3 October 2026 is a one-off first takeaway (`posts/2026-10-03/post.md`). Ongoing weekday posts start on Monday 5 October 2026.
+
+If `posts/` has no `post.md` files, the homepage and archive say that weekday posts start on Monday. That note is not a takeaway.
 
 ## Daily update
 
@@ -28,6 +30,9 @@ Body of the takeaway, in markdown.
 - Banks
 - Payment service providers
 - Corporate treasurers
+- Credit institutions
+
+The 3 October 2026 post uses Credit institutions.
 
 Leave `source` as `""` when there is no source. The body may use paragraphs, **bold**, *italic*, and [links](https://example.com).
 
@@ -39,7 +44,7 @@ python3 scripts/build_site.py
 
 3. Commit the new `post.md` and the generated files: `index.html`, `archive/index.html`, `posts/YYYY-MM-DD/index.html`, and `posts/posts.json`.
 
-The first real takeaway is Monday 5 October 2026. Add `posts/2026-10-05/post.md`, run the build, and commit those files. The empty-state note then leaves the homepage and the archive.
+The next ongoing post is Monday 5 October 2026. Add `posts/2026-10-05/post.md`, run the build, and commit those files.
 
 Links are relative so the site works at `https://arttuahola-beep.github.io/ecb-digital-euro-informer/`.
 

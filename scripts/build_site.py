@@ -5,8 +5,9 @@ Python 3 standard library only. Reads each post's front matter and markdown
 body, then writes index.html, archive/index.html, posts/YYYY-MM-DD/index.html,
 posts/posts.json, and 404.html.
 
-An empty posts directory is valid. Until the first weekday post is added, the
-homepage and archive explain that takeaways start on Monday 5 October 2026.
+An empty posts directory is valid. The homepage and archive then say that
+weekday posts start on Monday 5 October 2026. A Saturday one-off may be the
+first real post; ongoing weekday posts still begin that Monday.
 """
 
 from __future__ import annotations
