@@ -19,18 +19,24 @@
     </header>
     <main id="main">
       <article>
-        <p class="kicker"><time datetime="2026-10-09">Friday 9 October 2026</time> <span class="pill">Payment service providers</span></p>
-        <h1>If your merchants already take cards, the draft law likely forces digital euro acceptance too</h1>
+        <p class="kicker"><time datetime="2026-10-12">Monday 12 October 2026</time> <span class="pill">Credit institutions</span></p>
+        <h1>Digital euro settles in a new central bank account, so plan liquidity for a 24/7 DESP cash account now</h1>
         <div class="body">
-          <p>The Commission&#x27;s 2023 proposal would give the digital euro legal tender status. That means most payees must accept it, with clear exceptions. Microenterprises and people acting in a purely personal capacity can refuse, unless the microenterprise already accepts comparable digital payments at the point of interaction. Natural-person payees and firms that only take remote credit transfers, direct debits, or cash stay out of scope. Payees also cannot hide behind standard terms that ban digital euro; only an individually agreed different means of payment works.</p>
-          <p>This is still a proposal in the legislative process, not adopted law. Council texts keep the same logic: if a merchant already takes card or other digital means at checkout, mandatory acceptance is the default once the regulation lands.</p>
-          <p>For acquiring PSPs, the work starts now. Map which merchant clients already accept digital payments and would fall under the rule. Plan SoftPOS, e-commerce and m-commerce acceptance paths that match the draft rulebook&#x27;s acceptance solutions. And brief those merchants early, so checkout changes are not a last-minute scramble when the co-legislators finish.</p>
+          <p>Digital euro payments will not settle in your normal TARGET account. Each PSP will use a dedicated cash account in central bank money, called a DESP DCA, inside the Eurosystem&#x27;s new Digital Euro Service Platform. Your treasury team will move liquidity between T2 and that account, and the account must cover payments around the clock, every day of the year.</p>
+          <p>The plumbing is already being built. The ECB has scheduled the T2 changes for the June 2027 release, in time for a pilot that it says starts in September 2027. The draft message set uses ISO 20022 over a REST interface, close to what TIPS uses today, with status queries available 24/7 and floor and ceiling alerts if you subscribe. But during the pilot, funding and defunding the DESP DCA will be manual. No automatic top-ups are planned yet. Banks that act as co-managers for smaller PSPs have already told the ECB the setup does not meet their liquidity needs, and better credit-limit tools are only requested for after the pilot.</p>
+          <p>The takeaway: treat the digital euro as a new 24/7 liquidity position, not just a new product. Map who funds the account at night and at weekends, set your own buffers and alert thresholds, and check your ISO 20022 tooling against the TIPS-style messages. If you plan to settle for other PSPs, raise your co-management needs through your national central bank now. These are pilot and project specifications, not final rules, and the digital euro still depends on the EU regulation being adopted.</p>
         </div>
-        <p class="source">Source: European Commission proposal for a regulation on the digital euro, COM(2023) 369 (Arts. 7, 9 and 10); ECB draft digital euro scheme rulebook v0.91 (acceptance solutions)</p>
+        <p class="source">Source: ECB, FAQs on the digital euro pilot; T2-CG item 5.4 (11 June 2026); T2 change request T2-0150 &quot;T2 adaptations due to digital euro&quot;; T2-CG item 5.3 DESP DCA messaging and connectivity (18 Feb 2026)</p>
       </article>
       <section class="earlier" aria-labelledby="earlier-heading">
         <h2 id="earlier-heading">Earlier takeaways</h2>
         <ul class="takeaways">
+          <li>
+            <a href="posts/2026-10-09/">
+              <span class="item-meta"><time datetime="2026-10-09">Friday 9 October 2026</time> <span class="pill">Payment service providers</span></span>
+              <span class="item-title">If your merchants already take cards, the draft law likely forces digital euro acceptance too</span>
+            </a>
+          </li>
           <li>
             <a href="posts/2026-10-08/">
               <span class="item-meta"><time datetime="2026-10-08">Thursday 8 October 2026</time> <span class="pill">Corporate treasurers</span></span>
@@ -53,12 +59,6 @@
             <a href="posts/2026-10-05/">
               <span class="item-meta"><time datetime="2026-10-05">Monday 5 October 2026</time> <span class="pill">Banks</span></span>
               <span class="item-title">Digital euro fees will be capped, so start benchmarking your debit-card revenue now</span>
-            </a>
-          </li>
-          <li>
-            <a href="posts/2026-10-03/">
-              <span class="item-meta"><time datetime="2026-10-03">Saturday 3 October 2026</time> <span class="pill">Credit institutions</span></span>
-              <span class="item-title">Build the account link before anyone sets the holding cap</span>
             </a>
           </li>
         </ul>
