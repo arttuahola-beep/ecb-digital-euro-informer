@@ -19,18 +19,24 @@
     </header>
     <main id="main">
       <article>
-        <p class="kicker"><time datetime="2026-10-12">Monday 12 October 2026</time> <span class="pill">Credit institutions</span></p>
-        <h1>Digital euro settles in a new central bank account, so plan liquidity for a 24/7 DESP cash account now</h1>
+        <p class="kicker"><time datetime="2026-10-13">Tuesday 13 October 2026</time> <span class="pill">Banks</span></p>
+        <h1>DESP will score fraud risk for you, but your bank still decides block or pay</h1>
         <div class="body">
-          <p>Digital euro payments will not settle in your normal TARGET account. Each PSP will use a dedicated cash account in central bank money, called a DESP DCA, inside the Eurosystem&#x27;s new Digital Euro Service Platform. Your treasury team will move liquidity between T2 and that account, and the account must cover payments around the clock, every day of the year.</p>
-          <p>The plumbing is already being built. The ECB has scheduled the T2 changes for the June 2027 release, in time for a pilot that it says starts in September 2027. The draft message set uses ISO 20022 over a REST interface, close to what TIPS uses today, with status queries available 24/7 and floor and ceiling alerts if you subscribe. But during the pilot, funding and defunding the DESP DCA will be manual. No automatic top-ups are planned yet. Banks that act as co-managers for smaller PSPs have already told the ECB the setup does not meet their liquidity needs, and better credit-limit tools are only requested for after the pilot.</p>
-          <p>The takeaway: treat the digital euro as a new 24/7 liquidity position, not just a new product. Map who funds the account at night and at weekends, set your own buffers and alert thresholds, and check your ISO 20022 tooling against the TIPS-style messages. If you plan to settle for other PSPs, raise your co-management needs through your national central bank now. These are pilot and project specifications, not final rules, and the digital euro still depends on the EU regulation being adopted.</p>
+          <p>Under the draft digital euro scheme rulebook (v0.91, non-binding until the Digital Euro Regulation is adopted), your bank or PSP still owns the fraud decision. The Digital Euro Service Platform (DESP) can return a central fraud-and-risk score that draws on cross-PSP patterns. You then combine that score with your own local fraud and sanctions checks, and you choose whether to block the payment or let it go.</p>
+          <p>That split matters for build plans. Do not treat the Eurosystem score as a substitute for your engines. Wire a real-time call to DESP risk scoring into authorisation, map the returned score into your existing rules, and keep clear audit trails for who decided what. The RDG has moved high-level fraud, operational-risk and financial-crime rules into the core rulebook, while detailed scenario controls stay in a confidential risk library for participants.</p>
+          <p>Action for banks: design the score-merge path, SLA, and fallback if DESP scoring times out before pilot onboarding. Certification for scheme participation will still expect your front-end, back-end and end-to-end stacks to handle this flow correctly.</p>
         </div>
-        <p class="source">Source: ECB, FAQs on the digital euro pilot; T2-CG item 5.4 (11 June 2026); T2 change request T2-0150 &quot;T2 adaptations due to digital euro&quot;; T2-CG item 5.3 DESP DCA messaging and connectivity (18 Feb 2026)</p>
+        <p class="source">Source: Digital euro scheme rulebook v0.91 Annex D1 (acquiring PSP requirements); RDG sixth progress report, July 2026; ECB RFM component design (DESP fraud detection)</p>
       </article>
       <section class="earlier" aria-labelledby="earlier-heading">
         <h2 id="earlier-heading">Earlier takeaways</h2>
         <ul class="takeaways">
+          <li>
+            <a href="posts/2026-10-12/">
+              <span class="item-meta"><time datetime="2026-10-12">Monday 12 October 2026</time> <span class="pill">Credit institutions</span></span>
+              <span class="item-title">Digital euro settles in a new central bank account, so plan liquidity for a 24/7 DESP cash account now</span>
+            </a>
+          </li>
           <li>
             <a href="posts/2026-10-09/">
               <span class="item-meta"><time datetime="2026-10-09">Friday 9 October 2026</time> <span class="pill">Payment service providers</span></span>
@@ -53,12 +59,6 @@
             <a href="posts/2026-10-06/">
               <span class="item-meta"><time datetime="2026-10-06">Tuesday 6 October 2026</time> <span class="pill">Payment service providers</span></span>
               <span class="item-title">Offline digital euro puts AML checks and device funding in your back end, so plan that build now</span>
-            </a>
-          </li>
-          <li>
-            <a href="posts/2026-10-05/">
-              <span class="item-meta"><time datetime="2026-10-05">Monday 5 October 2026</time> <span class="pill">Banks</span></span>
-              <span class="item-title">Digital euro fees will be capped, so start benchmarking your debit-card revenue now</span>
             </a>
           </li>
         </ul>
