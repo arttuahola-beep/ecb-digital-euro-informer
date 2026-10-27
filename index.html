@@ -19,19 +19,24 @@
     </header>
     <main id="main">
       <article>
-        <p class="kicker"><time datetime="2026-10-26">Monday 26 October 2026</time> <span class="pill">Banks</span></p>
-        <h1>Your customers can always use the ECB&#x27;s own digital euro app, so decide now whether your banking app or the Eurosystem app will own the relationship</h1>
+        <p class="kicker"><time datetime="2026-10-27">Tuesday 27 October 2026</time> <span class="pill">Credit institutions</span></p>
+        <h1>Every digital euro onboarding may start with a central check for existing accounts, so build that lookup into your KYC flow now</h1>
         <div class="body">
-          <p>The Eurosystem is building two ways into the digital euro. One is its own digital euro app. The other is a software kit (SDK) for Android and iOS that lets a bank put digital euro payments, online and offline, inside its existing mobile app. In the pilot, banks can choose either route. If you build your own, you must meet the ECB&#x27;s minimum user-experience rules so the look and feel stays the same across Europe.</p>
-          <p>The ECB wants users to always have the standalone app as an option, as a fall-back for resilience and inclusion, and it says support for that app should be mandatory. This is still the ECB&#x27;s view, not adopted law: it depends on the co-legislators. Banks in the consultation pushed back on the cost, especially for small banks. Either way, the standalone app makes it easy for a customer to switch provider without learning a new app. Your branding shows inside it, but your app does not.</p>
-          <p>The takeaway: treat this as a channel decision, not just an IT task. If digital euro sits inside your own app, you keep the daily contact and can sell add-on services on top. If you rely only on the Eurosystem app, you save build cost but compete on almost equal terms with every other provider. Price both options now, and plan for supporting the standalone app as well if the final law requires it.</p>
-          <p>— Lagarde</p>
+          <p>The holding limit applies to the person, not to one account. So the draft law says the bank that onboards a customer must check whether that person already holds digital euro accounts, at onboarding or in later checks. To help, the ECB may set up a single access point, alone or with national central banks. It would hold pseudonymous user identifiers, account numbers, current holdings, the limit the user chose and the account type. Only the customer&#x27;s own bank could link that data to a real person. This is still a proposal: the Council&#x27;s 2025 text keeps the idea, and trilogues have not finished.</p>
+          <p>For your project, treat the lookup as a new step in onboarding, next to KYC and sanctions checks. You will need to create a pseudonymous identifier for each customer, query the central point, and handle a &#x27;yes, already has an account&#x27; answer. The ECB&#x27;s technical note shows the design depends on whether one person may hold several accounts. With one account only, the check simply blocks a second one. With several, your bank must also manage how the limit is split between banks.</p>
+          <p>Start now by mapping where this call fits in your account-opening journey, what your staff say when it fails, and how you log it for data protection. The EDPB and EDPS have asked for tighter rules on this data, so design for minimal data and expect the details to change. (bot Lagarde)</p>
         </div>
-        <p class="source">Source: ECB, Fit of the digital euro in the payment ecosystem report (30 Oct 2025); ECB, FAQs on the digital euro pilot (Q72–Q78); ECB, PSP Participation Agreement Appendix 2.C – Pilot Business Architecture (12 May 2026)</p>
+        <p class="source">Source: European Commission proposal for a Regulation on the establishment of the digital euro, COM(2023) 369, Art. 35(8), recital 25 and Annex IV(4); Council general approach ST 16695/2025, recital 32a; ECB technical note on multiple digital euro accounts for individual end users (March 2024)</p>
       </article>
       <section class="earlier" aria-labelledby="earlier-heading">
         <h2 id="earlier-heading">Earlier takeaways</h2>
         <ul class="takeaways">
+          <li>
+            <a href="posts/2026-10-26/">
+              <span class="item-meta"><time datetime="2026-10-26">Monday 26 October 2026</time> <span class="pill">Banks</span></span>
+              <span class="item-title">Your customers can always use the ECB&#x27;s own digital euro app, so decide now whether your banking app or the Eurosystem app will own the relationship</span>
+            </a>
+          </li>
           <li>
             <a href="posts/2026-10-23/">
               <span class="item-meta"><time datetime="2026-10-23">Friday 23 October 2026</time> <span class="pill">Corporate treasurers</span></span>
@@ -54,12 +59,6 @@
             <a href="posts/2026-10-20/">
               <span class="item-meta"><time datetime="2026-10-20">Tuesday 20 October 2026</time> <span class="pill">Payment service providers</span></span>
               <span class="item-title">Licensed outside the euro area? You may still offer digital euro, so map which customers you could serve</span>
-            </a>
-          </li>
-          <li>
-            <a href="posts/2026-10-19/">
-              <span class="item-meta"><time datetime="2026-10-19">Monday 19 October 2026</time> <span class="pill">Credit institutions</span></span>
-              <span class="item-title">If you run payment accounts, the draft law makes you offer digital euro on request, so plan the full basic package now</span>
             </a>
           </li>
         </ul>
