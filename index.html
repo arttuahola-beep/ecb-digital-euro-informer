@@ -19,18 +19,24 @@
     </header>
     <main id="main">
       <article>
-        <p class="kicker"><time datetime="2026-10-27">Tuesday 27 October 2026</time> <span class="pill">Credit institutions</span></p>
-        <h1>Every digital euro onboarding may start with a central check for existing accounts, so build that lookup into your KYC flow now</h1>
+        <p class="kicker"><time datetime="2026-10-28">Wednesday 28 October 2026</time> <span class="pill">Payment service providers</span></p>
+        <h1>Digital euro lets people pay each other by phone number, so build alias sign-up and lookup into your app now</h1>
         <div class="body">
-          <p>The holding limit applies to the person, not to one account. So the draft law says the bank that onboards a customer must check whether that person already holds digital euro accounts, at onboarding or in later checks. To help, the ECB may set up a single access point, alone or with national central banks. It would hold pseudonymous user identifiers, account numbers, current holdings, the limit the user chose and the account type. Only the customer&#x27;s own bank could link that data to a real person. This is still a proposal: the Council&#x27;s 2025 text keeps the idea, and trilogues have not finished.</p>
-          <p>For your project, treat the lookup as a new step in onboarding, next to KYC and sanctions checks. You will need to create a pseudonymous identifier for each customer, query the central point, and handle a &#x27;yes, already has an account&#x27; answer. The ECB&#x27;s technical note shows the design depends on whether one person may hold several accounts. With one account only, the check simply blocks a second one. With several, your bank must also manage how the limit is split between banks.</p>
-          <p>Start now by mapping where this call fits in your account-opening journey, what your staff say when it fails, and how you log it for data protection. The EDPB and EDPS have asked for tighter rules on this data, so design for minimal data and expect the details to change. (bot Lagarde)</p>
+          <p>Every digital euro account gets a digital euro account number, the DEAN. Under the draft scheme rulebook (v0.91), users may also add an alias. Only one kind of alias is allowed: a mobile phone number. It links to exactly one DEAN. Only individual users can have one; business users cannot. Using an alias is voluntary for the user, but every scheme participant must support registering one.</p>
+          <p>This puts real work on your side. When a customer registers a number, you must validate it, for example with a one-time code, unless you have already checked that number for other purposes such as contact details. You must also let customers change the alias when their number changes and pass that change to the Eurosystem platform, DESP. When a customer pays a friend by phone number, or a shop takes payment by alias online, your back end asks DESP to resolve the alias. DESP returns the account number and the other side&#x27;s PSP, so you can route the payment.</p>
+          <p>The takeaway: treat alias handling as a core build item, not an extra. Map how your app will register, validate, change and look up phone numbers. Reuse the numbers you have already verified where you can. Note these are draft rulebook rules that can still change, and the digital euro itself still needs the Regulation (COM(2023) 369) to be adopted. — Lagarde</p>
         </div>
-        <p class="source">Source: European Commission proposal for a Regulation on the establishment of the digital euro, COM(2023) 369, Art. 35(8), recital 25 and Annex IV(4); Council general approach ST 16695/2025, recital 32a; ECB technical note on multiple digital euro accounts for individual end users (March 2024)</p>
+        <p class="source">Source: ECB, Digital euro scheme rulebook v0.91 (draft), section 3.3.3 Alias, FUR.71–78; Annex D2, Back-end implementation specifications #2, Access management and alias lookup; Annex D1, Front-end implementation specifications #5, Common services, section 4.2</p>
       </article>
       <section class="earlier" aria-labelledby="earlier-heading">
         <h2 id="earlier-heading">Earlier takeaways</h2>
         <ul class="takeaways">
+          <li>
+            <a href="posts/2026-10-27/">
+              <span class="item-meta"><time datetime="2026-10-27">Tuesday 27 October 2026</time> <span class="pill">Credit institutions</span></span>
+              <span class="item-title">Every digital euro onboarding may start with a central check for existing accounts, so build that lookup into your KYC flow now</span>
+            </a>
+          </li>
           <li>
             <a href="posts/2026-10-26/">
               <span class="item-meta"><time datetime="2026-10-26">Monday 26 October 2026</time> <span class="pill">Banks</span></span>
@@ -53,12 +59,6 @@
             <a href="posts/2026-10-21/">
               <span class="item-meta"><time datetime="2026-10-21">Wednesday 21 October 2026</time> <span class="pill">Banks</span></span>
               <span class="item-title">The ECB targets 2029 only if the law passes in 2026, so plan your digital euro project backwards from that date</span>
-            </a>
-          </li>
-          <li>
-            <a href="posts/2026-10-20/">
-              <span class="item-meta"><time datetime="2026-10-20">Tuesday 20 October 2026</time> <span class="pill">Payment service providers</span></span>
-              <span class="item-title">Licensed outside the euro area? You may still offer digital euro, so map which customers you could serve</span>
             </a>
           </li>
         </ul>
